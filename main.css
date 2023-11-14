@@ -1,0 +1,42 @@
+* {
+    text-decoration: none;      /*링크 색 바뀌는 것 삭제*/
+    border-collapse: collapse;  /* 모든 밑줄 뜨는 것 삭제 */
+    color: black;
+}
+
+.story {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+}
+
+.entrance {
+    margin: auto;
+    text-align: center;
+    line-height: 70px;
+    width: 700px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: rgb(127, 242, 127);  
+}
+
+#go_list {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-weight: bold;
+    color: rgb(7, 118, 5);
+}
+
+.paw {
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    width: 1500px;
+    margin: auto;
+    margin-top: 5%;
+}

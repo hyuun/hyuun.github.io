@@ -1,0 +1,446 @@
+* {
+    list-style: none;
+    text-decoration: none;      /*링크 색 바뀌는 것 삭제*/
+    border-collapse: collapse;  /* 모든 밑줄 뜨는 것 삭제 */
+    margin:0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poor Story', cursive; 
+    list-style-type: none; /* 점 제거 */
+    padding-left: 0px; /* 기본 패딩 제거 */
+    background-repeat: no-repeat;
+
+}
+
+/* GNB영역 */
+div.gnbCover{
+    z-index: 9999;
+}
+
+div.gnbTop{
+    margin-left: 15%;
+}
+
+div.gnbTop>img{
+    width: 100%;
+    height: 15vh;
+}
+
+div.homeLogo{
+    width: 10%;
+    position: fixed;
+    top: 1vh;
+}
+
+div.homeLogo>a>img{
+    width: 140%;
+}
+
+div.gnbLeft{
+    position: fixed;
+    top: 10vh;
+    right: 84%;
+    margin-top: 35px;
+}
+
+div.gnbLeft>ul.gnbLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* margin-top: 40px; */
+}
+
+div.gnbLeft>ul>li {
+    display: flex; 
+}
+
+div.gnbLeft>ul>li>a>img {
+    position: relative;
+    height: 12vh;
+    transform-origin: 100% 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+div.gnbLeft>ul>li>a>img:hover{
+    position: relative;
+    height: 10vh; 
+    transform: scale(1.3);
+}
+
+div.gnbBottom{
+    /* width: 100%; */
+    bottom: -5px;
+    left: 20vh;
+    margin-left: 15%;
+}
+
+div.gnbBottom>img{
+    width: 100%;
+    height: 15vh; 
+}
+/* 메인 콘텐츠 영역 */
+
+
+.maincontent{
+    /* width: 85%; */
+    max-width: 85%;
+    margin-left: 15%;
+    margin-top: -7px;
+    height: 100%;
+    /* background-color: orange; */
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+/* 인트로 배경 */
+.selfdesign_bg {
+    background-image: url("media/selfdesign_bg.jpg");
+    width: 100%;
+    height: 343px;
+}
+
+.bg_title {
+    width: 100%;
+    padding : 110px 0;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Jua', sans-serif;
+}
+
+
+/* 본문 */
+
+article {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid gray; */
+    margin-top: 50px;
+}
+
+.sdm_bodyintro {
+    display: flex;
+    justify-content: center;
+}
+
+.bodyintro_text:before {
+    content: '';
+    opacity: 1;
+    width: 1px;
+    height: 30px;
+    background-color: #8a8a8a;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.bodyintro_text {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+}
+
+#bodyintro_span {
+    background-color: rgb(234, 248, 255);
+    font-weight: bold;
+    font-family: 'Jua', sans-serif;
+}
+
+.common_imgbox {
+    display: flex;
+    justify-content: center;
+}
+
+/* 탭 메뉴 */
+.tab-menu {
+    margin: 38px auto 0; 
+     display: flex;
+     width: 100%;
+     height: 63px;
+     border-bottom: 2px solid #ccc;
+     /* margin-bottom: 10px; */
+ }
+ 
+ .tab-menu li {
+     width: 50%;
+     text-align: center;
+ }
+ 
+ .tab-menu .half {
+     width: 50%;
+     text-align: center;
+ }
+ 
+ .tab-menu li a {
+     display: inline-block;
+     width: 100%;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 61px;
+     color: #9b9b9b;
+ }
+ 
+ .tab-menu li a.active, .tab-menu li a:hover {
+     color: #565656;
+     font-size: 22px;
+     border-bottom: 2px solid #80DEEA;
+ }
+ 
+ .tab-menu li a.tab-2 br {
+     display: none;
+ }
+ 
+ .tab-menu-2depth li {
+     width: 50%;
+ }
+
+.sdm_section:not(:last-child) {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+#last_sdm_section {
+    padding-bottom: 50px;
+}
+
+
+/* 붙임파일 */
+.file_data {
+    padding: 20px 20px 20px 32px;
+    background-color: rgb(239, 239, 239);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(102, 102, 102);
+    background-size: 14px;
+    background-repeat: no-repeat; 
+    margin-bottom: 10px;
+}
+
+/* 0. 자기설계전공이란 */
+.definition_text {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.sdmimg_box {
+    width: 500px;
+    height: 267px;
+    border: 15px solid rgb(221, 236, 202);
+    padding: 5px; 
+}
+
+.sdm_description {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+.sdm_span {
+    background-color: rgb(23, 224, 26);
+}
+
+/* 1. 자기설계전공 신청서 작성 */
+.sdm_order {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    padding: 2px;
+    background-color: rgb(234, 248, 255);
+    /* background-color: rgb(221, 236, 202); */    
+    margin-bottom: 50px;
+}
+
+.appli_imgbox {
+    width: 1150px;
+    margin: auto;
+}
+
+.appli_img {
+    width: 500px;
+    height: 707px;
+    border: 15px solid rgb(221, 236, 202);
+}
+
+#appli2 {
+    float: right;
+}
+
+.appli_text2 {
+    display: flex;
+    justify-content: center;
+}
+
+.appli_description {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+/* 2. 수강희망 교과목 신청 */
+.hope_imgbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hope_img {
+    width: 1200px;
+    height: 291px;
+    border: 15px solid rgb(221, 236, 202);
+}
+
+.hope_text2 {
+    display: flex;
+    justify-content: center;
+}
+
+.hope_description {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+/* 3. 자기설계전공 변경 */
+.change_text {
+    display: flex;
+    justify-content: center;
+}
+
+.change_description {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+/* 신규 전공명 */
+.newname_text {
+    display: flex;
+    justify-content: center;
+}
+
+.newname_description {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+/* 4. 자기설계전공 전공심사 */
+.evalu_imgbox {
+    width: 1150px;
+    margin: auto;
+}
+
+.evalu_img {
+    width: 500px;
+    height: 707px;
+    border: 15px solid rgb(221, 236, 202);
+    margin-bottom: 20px;
+}
+
+#evalu_even {
+    float: right;
+}
+
+.evalu_text {
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.evalu_video {
+    width: 1000px;
+    height: 564px;
+    border: 15px solid rgb(221, 236, 202);
+}
+
+.evlau_text2 {
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.evalu_description {
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+#evaluimportant_span {
+    background-color: yellow;
+}
+
+#evaluelement_span {
+    background-color:rgb(23, 224, 26);
+}
+
+/* 5. 기존 전공 */
+.exist_text {
+    display: flex;
+    justify-content: center;
+}
+
+.exist_description {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+}
+
+/* 복수전공 */
+.secmajor_text {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secimg {
+    width: 500px;
+    height: 707px;
+    border: 15px solid rgb(221, 236, 202);
+    margin-bottom: 20px;
+}
+
+.sec_description {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(234, 248, 255);
+    margin-bottom: 30px;
+}
+
+#sec_span {
+    color: red;
+}
